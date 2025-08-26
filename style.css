@@ -1,0 +1,103 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+  width: 1280px;
+  margin: 0 auto;
+  background: #1B2944;
+}
+
+.header {
+    display: flex;
+    margin: 40px 168px 88px;
+    justify-content: space-between;
+}
+
+.header__logo {
+    display: block;
+    width: 100px;
+}
+
+.header__logo-image {
+    width: 100%;
+}
+
+.header__social-list {
+    list-style-type: none;
+    display: flex;
+    justify-self: end;
+    gap: 15px;
+}
+
+.header__social-link {
+    display: block;
+    width: 20px;
+}
+
+.header__social-icon {
+    width: 100%;
+}
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 168px 88px;
+}
+
+.hero__info {
+    display: flex;
+    flex-direction: column;
+    width: 464px;
+}
+
+.hero__info-title {
+    color: #FFBB01;
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 1.75rem;
+    margin-bottom: 12px;
+}
+
+.hero__info-name {
+    color: #FFF;
+    font-family: 'Roboto', sans-serif;
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 3.6875rem;
+    margin-bottom: 24px;
+}
+
+.hero__info-description {
+    color: #FFF;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.75rem;
+    margin-bottom: 36px;
+}
+
+.hero__info-consultation {
+    color: #1B2944;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 0.975rem;
+    text-transform: uppercase;
+    width: 300px;
+    height: 66px;
+    background-color: #FFBB01;
+    border-radius: 5%;
+}
+
+.hero__photo {
+    display: block;
+    width: 384px;
+    justify-self: end;
+}
+
+.hero__photo-image {
+    width: 100%;
+}
