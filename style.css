@@ -14,7 +14,7 @@ body {
 
 .header {
     display: flex;
-    margin: 40px 168px 88px;
+    padding: 40px 168px 88px;
     justify-content: space-between;
     align-items: center;
 }
@@ -50,7 +50,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 0 168px 88px;
+    padding: 0 168px 81px;
 }
 
 .hero__info {
@@ -119,3 +119,110 @@ body {
 .hero__photo-image {
     width: 100%;
 }
+
+/* section features */
+
+.features {
+    background-color: #141F35;
+    padding: 88px 168px;
+}
+
+.section__header {
+    color: #FFF;
+    font-family: 'Roboto', sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 2.625rem;
+    padding-bottom: 48px;
+    letter-spacing: -1.2px;
+}
+
+.features__list {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 48px 16px;
+}
+
+.features__list-item {
+    width: 304px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+}
+
+.card__logo {
+    width: 52px;
+}
+
+.card__title {
+    color: #FFF;
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1.75rem;
+    margin-top: 20px;
+    margin-bottom: 16px;
+    letter-spacing: -0.5px;
+}
+
+.card__text {
+    color: #FFF;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.75rem;
+}
+
+/* section portfolio */
+
+.portfolio {
+    padding: 88px 168px;
+}
+
+.portfolio__list {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+.portfolio__list-item {}
+
+.link {}
+
+.preview {
+    display: flex;
+    flex-direction: column;
+    border-radius: 6px;
+    background: linear-gradient(180deg, rgba(196, 196, 196, 0.00) 35.34%, #213E60 99.85%);
+    width: 304px;
+    height: 304px;
+    
+}
+
+.preview_type_bar {
+    background-image: url(./images/Rectangle\ 22.png);
+}
+
+.preview_type_golf {
+    background-image: url(./images/Rectangle\ 23.png)
+}
+
+.preview_type_hike {
+    background-image: url(./images/Rectangle\ 24.png);
+}
+
+.preview__title {
+    color: #FFF;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.75rem;
+}
+
+.preview__button {}
