@@ -71,7 +71,7 @@ body {
     color: #FFBB01;
     font-size: 24px;
     font-weight: 400;
-    line-height: 1.75rem;
+    line-height: 117%;
     margin-top: 28px;
     margin-bottom: 12px;
 }
@@ -80,7 +80,7 @@ body {
     color: #FFF;
     font-size: 50px;
     font-weight: 700;
-    line-height: 3.6875rem;
+    line-height: 118%;
     margin-bottom: 24px;
 }
 
@@ -88,7 +88,7 @@ body {
     color: #FFF;
     font-size: 16px;
     font-weight: 400;
-    line-height: 1.75rem;
+    line-height: 175%;
     margin-bottom: 36px;
 }
 
@@ -107,7 +107,7 @@ body {
     text-align: center;
     font-size: 12px;
     font-weight: 700;
-    line-height: 0.975rem;
+    line-height: 130%;
     text-transform: uppercase;
     letter-spacing: -0.3px;
 }   
@@ -132,7 +132,7 @@ body {
     color: #FFF;
     font-size: 36px;
     font-weight: 700;
-    line-height: 2.625rem;
+    line-height: 117%;
     padding-bottom: 48px;
 }
 
@@ -161,7 +161,7 @@ body {
     color: #FFF;
     font-size: 24px;
     font-weight: 700;
-    line-height: 1.75rem;
+    line-height: 117%;
     margin-top: 20px;
     margin-bottom: 16px;
     letter-spacing: -0.5px;
@@ -171,7 +171,7 @@ body {
     color: #FFF;
     font-size: 16px;
     font-weight: 400;
-    line-height: 1.75rem;
+    line-height: 175%;
 }
 
 /* section portfolio */
@@ -274,7 +274,6 @@ body {
     justify-self: flex-end;
     gap: 4px;
     padding: 8px;
-    
     z-index: 1;
 }
 
