@@ -2,12 +2,14 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    list-style: none;
 }
 
 body {
   width: 1280px;
   margin: 0 auto;
   background: #1B2944;
+  font-family: 'Roboto', sans-serif;
 }
 
 /* header */
@@ -28,19 +30,19 @@ body {
     width: 100%;
 }
 
-.header__social-list {
+.social-list {
     list-style-type: none;
     display: flex;
     justify-self: end;
     gap: 15px;
 }
 
-.header__social-link {
+.social-link {
     display: block;
     width: 20px;
 }
 
-.header__social-icon {
+.social-icon {
     width: 100%;
 }
 
@@ -63,7 +65,6 @@ body {
 
 .hero__info-title {
     color: #FFBB01;
-    font-family: 'Roboto', sans-serif;
     font-size: 24px;
     font-weight: 400;
     line-height: 1.75rem;
@@ -73,7 +74,6 @@ body {
 
 .hero__info-name {
     color: #FFF;
-    font-family: 'Roboto', sans-serif;
     font-size: 50px;
     font-weight: 700;
     line-height: 3.6875rem;
@@ -83,7 +83,6 @@ body {
 
 .hero__info-description {
     color: #FFF;
-    font-family: 'Roboto', sans-serif;
     font-size: 16px;
     font-weight: 400;
     line-height: 1.75rem;
@@ -93,7 +92,6 @@ body {
 .hero__info-consultation {
     color: #1B2944;
     text-align: center;
-    font-family: 'Roboto', sans-serif;
     font-size: 12px;
     font-weight: 700;
     line-height: 0.975rem;
@@ -129,12 +127,10 @@ body {
 
 .section__header {
     color: #FFF;
-    font-family: 'Roboto', sans-serif;
     font-size: 36px;
     font-weight: 700;
     line-height: 2.625rem;
     padding-bottom: 48px;
-    letter-spacing: -1.2px;
 }
 
 .features__list {
@@ -160,7 +156,6 @@ body {
 
 .card__title {
     color: #FFF;
-    font-family: 'Roboto', sans-serif;
     font-size: 24px;
     font-weight: 700;
     line-height: 1.75rem;
@@ -171,7 +166,6 @@ body {
 
 .card__text {
     color: #FFF;
-    font-family: 'Roboto', sans-serif;
     font-size: 16px;
     font-weight: 400;
     line-height: 1.75rem;
@@ -184,45 +178,123 @@ body {
 }
 
 .portfolio__list {
-    list-style: none;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     gap: 16px;
 }
 
-.portfolio__list-item {}
-
-.link {}
-
-.preview {
+.portfolio__item {
+    padding-left: 32px;
+    padding-right: 100px;
+    padding-bottom: 32px;
     display: flex;
     flex-direction: column;
-    border-radius: 6px;
-    background: linear-gradient(180deg, rgba(196, 196, 196, 0.00) 35.34%, #213E60 99.85%);
-    width: 304px;
-    height: 304px;
-    
+    justify-content: end;
+    gap: 16px;
+    min-height: 304px;
+    position: relative;
 }
 
-.preview_type_bar {
+.portfolio__title {
+    color: #FFF;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 156%;
+    z-index: 1;
+}
+    
+.portfolio__button {
+    background: #EC1F46;
+    border-radius: 6px;
+    width: 120px;
+    height: 36px;
+    border: none;
+    color: #FFF;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 130%;
+    box-shadow: 0 2px 0 #CE1C3E;
+    z-index: 1;
+}
+
+.portfolio__item_type_bar {
     background-image: url(./images/Rectangle\ 22.png);
 }
 
-.preview_type_golf {
-    background-image: url(./images/Rectangle\ 23.png)
+.portfolio__item_type_golf {
+    background-image: url(./images/Rectangle\ 23.png);
 }
 
-.preview_type_hike {
+.portfolio__item_type_hike {
     background-image: url(./images/Rectangle\ 24.png);
 }
 
-.preview__title {
-    color: #FFF;
-    font-family: 'Roboto', sans-serif;
-    font-size: 18px;
-    font-weight: 700;
-    line-height: 1.75rem;
+.overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(180deg, rgba(196, 196, 196, 0.00) 35.34%, #213E60 99.85%);
+    border-radius: 6px;
 }
 
-.preview__button {}
+/* section gallery */
+
+.gallery {
+    padding: 88px 168px;
+    background-color: #141F35;
+}
+
+.gallery__net {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 16px;
+}
+
+.gallery__net-link {
+    width: 100%;
+}
+
+.gallery__net-image {
+    width: 224px;
+    height: 224px;
+    border-radius: 6px;
+}
+
+.gallery__net-video {
+    position: relative;
+}
+
+.video__controls {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-self: flex-end;
+    gap: 4px;
+    padding: 8px;
+    
+    z-index: 1;
+}
+
+.video__controls-duration {
+    color: #FFF;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 167%;
+    letter-spacing: 0.32px;
+}
+
+/* section contacts */
+
+.contacts {
+    padding: 88px 168px;
+}
+
+.contacts__path {
+    display: flex;
+    flex-direction: row;
+    gap: 96px;
+}
+
+.contacts__form {
+    padding: 38px 32px;
+}
