@@ -101,13 +101,16 @@ body {
 }
 
 .hero__info-button {
-    width: 300px;
-    height: 66px;
     background-color: #FFBB01;
     border-radius: 6px;
     box-shadow: 0 4px 0 #B68500;
     border: none;
 }
+
+.consultation-button {
+    width: 300px;
+    height: 66px;
+}   
 
 .hero__photo {
     display: block;
@@ -295,6 +298,27 @@ body {
     gap: 96px;
 }
 
-.contacts__form {
+.app__form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    background-color: #FFF;
+    border-radius: 5px;
+    box-shadow: -5px 5px 0 #FFC41D;
     padding: 38px 32px;
+    max-width: 464px;
+}
+
+.app__form-title {
+    color: #000;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 156%;
+}
+
+.app__form-input {
+    color: #949494;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 200%;
 }
