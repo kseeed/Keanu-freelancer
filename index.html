@@ -40,7 +40,7 @@
             <p class="hero__info-title">Фрилансер</p>
             <h1 class="hero__info-name">Петр Федоров</h1>
             <p class="hero__info-description">Разрабатываю сайты для малого и&nbsp;среднего бизнеса. У&nbsp;меня можно заказать дизайн и&nbsp;верстку небольшого сайта или интернет-магазина</p>
-            <button class="hero__info-consultation hero__info-button consultation-button" type="button">Бесплатная консультация</button>
+            <button class="hero__info-button consultation-button" type="button">Бесплатная консультация</button>
         </div>
         <div class="hero__photo">
             <img class="hero__photo-image" src="./images/1280/avatar.png" alt="Фото Киану Ривза" />
@@ -162,44 +162,53 @@
         <div class="contacts__path">
             <div class="app__form">
                 <p class="app__form-title">Можете просто оставить заявку, я позвоню вам сегодня</p>
-                <p class="app__form-input">Ваше имя</p>
-                <p class="app__form-input">Ваш телефон</p>
+                <div class="app__form-input">
+                    <img class="app__form-input-icon" src="./images/user-icon.svg" alt="Иконка человека" />
+                    <p class="app__form-input-field">Ваше имя</p>
+                </div>
+                <div class="app__form-input">
+                    <img class="app__form-input-icon" src="./images/phone-icon.svg" alt="Иконка телефона" />
+                    <p class="app__form-input-field">Ваш телефон</p>
+                </div>
                 <button class="app__form-button consultation-button">Бесплатная консультация</button>
             </div>
             <div class="contacts__data">
-                <div class="contacts__data-item">
-                    <p class="contacts__data-item-title">Телефон</p>
-                    <p class="contacts__data-item-text">+7 999 123 45 67</p>
-                </div>
-                <div class="contacts__data-item">
-                    <p class="contacts__data-item-title">Почта</p>
-                    <p class="contacts__data-item-text">ivanov@mail.ru</p>
-                </div>
-                <div class="contacts__data-item">
-                    <p class="contacts__data-item-title">Соцсети</p>
-                    <ul class="social-list">
-                        <li class="social-list-item">
-                            <a class="social-link">
-                                <img class="social-icon" src="./images/github.svg" alt="Логотип GitHub" />
-                            </a>
-                        </li>
-                        <li class="social-list-item">
-                            <a class="social-link">
-                                <img class="social-icon" src="./images/twitter.svg" alt="Логотип Twitter" />
-                            </a>
-                        </li>
-                        <li class="social-list-item">
-                            <a class="social-link">
-                                <img class="social-icon" src="./images/instagram.svg" alt="Логотип Instagram" />
-                            </a>
-                        </li>
-                        <li class="social-list-item">
-                            <a class="social-link">
-                                <img class="social-icon" src="./images/facebook.svg" alt="Логотип Facebook" />
-                            </a>
-                        </li>
-                    </ul>
-                </div>
+                <ul class="contacts__data-list">
+                    <li class="contacts__data-item">
+                        <p class="contacts__data-item-title">Телефон</p>
+                        <p class="contacts__data-item-text">+7 999 123 45 67</p>
+                    </li>
+                    <li class="contacts__data-item">
+                        <p class="contacts__data-item-title">Почта</p>
+                        <p class="contacts__data-item-text">ivanov@mail.ru</p>
+                    </li>
+                    <li class="contacts__data-item">
+                        <p class="contacts__data-item-title">Соцсети</p>
+                        <ul class="social-list">
+                            <li class="social-list-item">
+                                <a class="social-link">
+                                    <img class="social-icon" src="./images/github.svg" alt="Логотип GitHub" />
+                                </a>
+                            </li>
+                            <li class="social-list-item">
+                                <a class="social-link">
+                                    <img class="social-icon" src="./images/twitter.svg" alt="Логотип Twitter" />
+                                </a>
+                            </li>
+                            <li class="social-list-item">
+                                <a class="social-link">
+                                    <img class="social-icon" src="./images/instagram.svg" alt="Логотип Instagram" />
+                                </a>
+                            </li>
+                            <li class="social-list-item">
+                                <a class="social-link">
+                                    <img class="social-icon" src="./images/facebook.svg" alt="Логотип Facebook" />
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <p class="contacts__data-politics">Политика конфиденциальности</p>
             </div>
         </div>
     </section>

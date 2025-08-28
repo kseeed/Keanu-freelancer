@@ -37,13 +37,17 @@ body {
     gap: 15px;
 }
 
+.social-list-item {
+    align-self: baseline;
+}
+
 .social-link {
     display: block;
     width: 20px;
 }
 
 .social-icon {
-    width: 100%;
+    height: 100%;
 }
 
 /* section hero */
@@ -52,7 +56,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 168px 81px;
+    padding: 0 168px 79px;
 }
 
 .hero__info {
@@ -78,7 +82,6 @@ body {
     font-weight: 700;
     line-height: 3.6875rem;
     margin-bottom: 24px;
-    letter-spacing: -1.2px;
 }
 
 .hero__info-description {
@@ -89,27 +92,24 @@ body {
     margin-bottom: 36px;
 }
 
-.hero__info-consultation {
+.hero__info-button {
+    width: 300px;
+    margin-bottom: 39px;
+}
+
+.consultation-button {
+    background-color: #FFBB01;
+    border-radius: 6px;
+    box-shadow: 0 4px 0 #B68500;
+    border: none;
+    height: 66px;
     color: #1B2944;
     text-align: center;
     font-size: 12px;
     font-weight: 700;
     line-height: 0.975rem;
     text-transform: uppercase;
-    margin-bottom: 39px;
     letter-spacing: -0.3px;
-}
-
-.hero__info-button {
-    background-color: #FFBB01;
-    border-radius: 6px;
-    box-shadow: 0 4px 0 #B68500;
-    border: none;
-}
-
-.consultation-button {
-    width: 300px;
-    height: 66px;
 }   
 
 .hero__photo {
@@ -125,7 +125,7 @@ body {
 
 .features {
     background-color: #141F35;
-    padding: 88px 168px;
+    padding: 89px 168px;
 }
 
 .section__header {
@@ -177,7 +177,7 @@ body {
 /* section portfolio */
 
 .portfolio {
-    padding: 88px 168px;
+    padding: 92px 168px;
 }
 
 .portfolio__list {
@@ -242,7 +242,7 @@ body {
 /* section gallery */
 
 .gallery {
-    padding: 88px 168px;
+    padding: 86px 168px;
     background-color: #141F35;
 }
 
@@ -289,7 +289,7 @@ body {
 /* section contacts */
 
 .contacts {
-    padding: 88px 168px;
+    padding: 78px 168px;
 }
 
 .contacts__path {
@@ -314,11 +314,72 @@ body {
     font-size: 18px;
     font-weight: 700;
     line-height: 156%;
+    text-align: center;
+    margin-bottom: 16px;
 }
 
-.app__form-input {
+.app__form-input-field {
     color: #949494;
     font-size: 14px;
     font-weight: 400;
     line-height: 200%;
+}
+
+.app__form-input {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 14px;
+    border-radius: 5px;
+    background: #F8F8F8;
+    box-shadow: 0 3px 10px 0 rgba(199, 199, 199, 0.25) inset;
+    padding: 20px 32px;
+}
+
+.app__form-input-icon {
+    align-self: center;
+    width: 16px;
+    height: 18px;
+}
+.app__form-button {
+    margin-top: 19px;
+}
+
+.contacts__data {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.contacts__data-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 32px 114px;
+    justify-content: space-between;
+    
+}
+
+.contacts__data-item-title {
+    color: #FFF;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 117%;
+    margin-bottom: 16px;
+}
+
+.contacts__data-item-text {
+    color: #FFF;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 175%;
+}
+
+.contacts__data-politics {
+    color: #949494;
+    font-size: 15px;
+    font-weight: 400;
+    text-decoration-line: underline;
+    text-decoration-style: solid;
 }
